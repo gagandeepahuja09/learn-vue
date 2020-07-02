@@ -11,6 +11,12 @@
             <h1>{{ greet('Evening') }}</h1>
             <p>Name: {{ name }}</p>
             <p>About: {{ about }}</p>
+            <button v-on:click="age++">Add One To Age</button>
+            <button v-on:click="add(1)">Add One To Age(Method)</button>
+            <button v-on:dblclick="add(10)">Add Ten To Age(Double Click)</button>
+            <p>Age: {{ age }}</p>
+            <button v-on:click="age--">Subtract One From Age</button>
+            <button v-on:click="subtract">Subtract One From Age(Method)</button>
             <a v-bind:href="website">Github Profile</a>
             <input type="text" v-bind:value="name">
             <a :href="website">Github Profile(Shorthand Representation for Data Binding in Vue)</a>
