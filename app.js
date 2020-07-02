@@ -6,6 +6,8 @@ new Vue({
         age: 21,
         website: 'http://github.com/gagandeepahuja09',
         websiteTag: '<a href="http://github.com/gagandeepahuja09">Way of binding html written in js</a>',
+        x: 0,
+        y: 0,
     },
     methods: {
         greet: function(time) {
@@ -16,6 +18,10 @@ new Vue({
         },
         subtract: function() {
             return this.age--;
+        },
+        // we get that event automatically
+        updateXY: function(event) {
+            console.log(event);
         }
     }
 });

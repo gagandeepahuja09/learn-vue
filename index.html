@@ -21,6 +21,7 @@
             <input type="text" v-bind:value="name">
             <a :href="website">Github Profile(Shorthand Representation for Data Binding in Vue)</a>
             <p v-html="websiteTag"></p>
+            <div id="canvas" v-on:mousemove="updateXY">{{ x }}, {{ y }}</div>
         </div>
     </body>
 
