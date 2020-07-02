@@ -15,9 +15,9 @@
             <button v-on:click="add(1)">Add One To Age(Method)</button>
             <button v-on:dblclick="add(10)">Add Ten To Age(Double Click)</button>
             <p>Age: {{ age }}</p>
-            <button v-on:click="age--">Subtract One From Age</button>
+            <button v-on:click.once="age--">Subtract One From Age</button>
             <button v-on:click="subtract">Subtract One From Age(Method)</button>
-            <a v-bind:href="website">Github Profile</a>
+            <a v-on:click.prevent="linkClick" v-bind:href="website">Github Profile</a>
             <input type="text" v-bind:value="name">
             <a :href="website">Github Profile(Shorthand Representation for Data Binding in Vue)</a>
             <p v-html="websiteTag"></p>

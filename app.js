@@ -22,6 +22,11 @@ new Vue({
         // we get that event automatically
         updateXY: function(event) {
             console.log(event);
+            this.x = event.offsetX;
+            this.y = event.offsetY;
+        },
+        linkClick: function() {
+            alert("Won't open the link");
         }
     }
 });
