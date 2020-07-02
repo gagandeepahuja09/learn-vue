@@ -2,13 +2,19 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>VueJS Tutorials</title>
+        <title>Learning VueJS</title>
         <link href="styles.css" rel="stylesheet" />
         <script src="https://unpkg.com/vue"></script>
     </head>
     <body>
         <div id="vue-app">
-            <h1>Hey, {{ name }}</h1>
+            <h1>{{ greet('Evening') }}</h1>
+            <p>Name: {{ name }}</p>
+            <p>About: {{ about }}</p>
+            <a v-bind:href="website">Github Profile</a>
+            <input type="text" v-bind:value="name">
+            <a :href="website">Github Profile(Shorthand Representation for Data Binding in Vue)</a>
+            <p v-html="websiteTag"></p>
         </div>
     </body>
 
