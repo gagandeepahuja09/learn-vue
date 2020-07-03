@@ -4,3 +4,16 @@
     text-align: center;
     border: 1px solid #333;
 }
+
+div {
+    background-color: orange;
+}
+
+
+span {
+    background-color: red;
+}
+
+.available span {
+    background-color: green;
+}

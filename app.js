@@ -3,6 +3,7 @@ new Vue({
     data: {
         name: 'Gagandeep',
         about: 'Chill guy',
+        available: false,
         age: 21,
         website: 'http://github.com/gagandeepahuja09',
         websiteTag: '<a href="http://github.com/gagandeepahuja09">Way of binding html written in js</a>',
