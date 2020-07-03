@@ -8,6 +8,8 @@ new Vue({
         websiteTag: '<a href="http://github.com/gagandeepahuja09">Way of binding html written in js</a>',
         x: 0,
         y: 0,
+        a: 0,
+        b: 0,
     },
     methods: {
         greet: function(time) {
@@ -33,6 +35,24 @@ new Vue({
         },
         logAge: function() {
             console.log("Age entered");
+        },
+        // ageA: function() {
+        //     console.log("ageA");
+        //     return this.age + this.a;
+        // },
+        // ageB: function() {
+        //     console.log("ageB");
+        //     return this.age + this.b;
+        // }
+    },
+    computed: {
+        ageA: function() {
+            console.log("ageA");
+            return this.age + this.a;
+        },
+        ageB: function() {
+            console.log("ageB");
+            return this.age + this.b;
         }
     }
 });

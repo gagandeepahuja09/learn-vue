@@ -29,6 +29,16 @@
             </input>
             <p v-html="websiteTag"></p>
             <div id="canvas" v-on:mousemove="updateXY">{{ x }}, {{ y }}</div>
+            <h2>Computed Properties</h2>
+            <h3>{{ a }}</h3>
+            <h3>{{ b }}</h3>
+            <button @click="a++">Add One To a</button>
+            <button @click="b++">Add One To b</button>
+            <!-- Without computed properties
+            <p>A + Age: {{ ageA() }}</p>
+            <p>B + Age: {{ ageB() }}</p> -->
+            <p>A + Age: {{ ageA }}</p>
+            <p>B + Age: {{ ageB }}</p>
         </div>
     </body>
 
