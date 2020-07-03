@@ -20,6 +20,13 @@
             <a v-on:click.prevent="linkClick" v-bind:href="website">Github Profile</a>
             <input type="text" v-bind:value="name">
             <a :href="website">Github Profile(Shorthand Representation for Data Binding in Vue)</a>
+            <h1>Keyboard Events</h1>
+            <input type="text" @keyup.enter="logName">
+                <label>Name:</label>
+            </input>
+            <input type="text" @keyup.alt.enter="logAge">
+                <label>Age:</label>
+            </input>
             <p v-html="websiteTag"></p>
             <div id="canvas" v-on:mousemove="updateXY">{{ x }}, {{ y }}</div>
         </div>

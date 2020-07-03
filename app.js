@@ -27,6 +27,12 @@ new Vue({
         },
         linkClick: function() {
             alert("Won't open the link");
+        },
+        logName: function() {
+            console.log("Name entered");
+        },
+        logAge: function() {
+            console.log("Age entered");
         }
     }
 });
