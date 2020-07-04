@@ -1,8 +1,21 @@
 new Vue({
     el: '#vue-app',
     data: {
-        error: true,
-        success: false
+        groceries: [ "bread", "jam", "mango", "banana", "butter", "cheese", "apple", "pickle" ],
+        friends: [
+            { 
+                name: "Sabhan",
+                age: 22
+            },
+            {
+                name: "Gagandeep",
+                age: 21
+            },
+            {
+                name: "Awasthi",
+                age: 23
+            },
+        ]
     },
     methods: {
     },

@@ -8,11 +8,17 @@
     </head>
     <body>
         <div id="vue-app">
-            <h1>Conditionals</h1>
-            <button @click="error = !error">Toggle Error</button>
-            <button @click="success = !success">Toggle Success</button>
-            <p v-if="error">There is some error</p>
-            <p v-else-if="success">Voohooo Congratulation Success!!</p>
+            <h1>Looping Through Lists</h1>
+            <ul>
+                <li v-for="(grocery, index) in groceries">
+                    {{ index }}. {{ grocery }}
+                </li>
+            </ul>
+            <template v-for="friend in friends">
+                <template v-for="(value, key) in friend">
+                    <h3>{{ key }} - {{ value}}</h3>
+                </template>
+            </template>
         </div>
     </body>
 
