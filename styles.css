@@ -1,26 +1,13 @@
-#canvas {
-    width: 600px;
-    padding: 200px 20px;
-    text-align: center;
-    border: 1px solid #333;
+#ball {
+    background-color: blueviolet;
+    border-radius: 50%;
 }
 
-div {
-    background-color: orange;
+.center {
+    margin: 0 auto;
 }
 
-
-span {
-    background-color: red;
-}
-
-.available span {
-    background-color: green;
-}
-
-.nearby span:after {
-    content: "nearby";
-    border: 2px solid black;
-    padding-left: 20px;
-    margin-left: 50px;
+button {
+    height: 50px;
+    margin: 0 auto;
 }

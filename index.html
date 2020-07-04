@@ -8,17 +8,12 @@
     </head>
     <body>
         <div id="vue-app">
-            <h1>Looping Through Lists</h1>
-            <ul>
-                <li v-for="(grocery, index) in groceries">
-                    {{ index }}. {{ grocery }}
-                </li>
-            </ul>
-            <template v-for="friend in friends">
-                <template v-for="(value, key) in friend">
-                    <h3>{{ key }} - {{ value}}</h3>
-                </template>
-            </template>
+            <div id="ball" class="center" :style="{ 'height': height + 'px', 'width': height + 'px' }" @click="kick">
+            </div>
+            <div class="center">
+                <button @click="restart" v-if="ended">Restart</button>
+                <button @click="kick">Kick</button>
+            </div>
         </div>
     </body>
 
