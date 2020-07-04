@@ -17,3 +17,10 @@ span {
 .available span {
     background-color: green;
 }
+
+.nearby span:after {
+    content: "nearby";
+    border: 2px solid black;
+    padding-left: 20px;
+    margin-left: 50px;
+}

@@ -4,6 +4,7 @@ new Vue({
         name: 'Gagandeep',
         about: 'Chill guy',
         available: false,
+        nearby: false,
         age: 21,
         website: 'http://github.com/gagandeepahuja09',
         websiteTag: '<a href="http://github.com/gagandeepahuja09">Way of binding html written in js</a>',
@@ -54,6 +55,12 @@ new Vue({
         ageB: function() {
             console.log("ageB");
             return this.age + this.b;
+        },
+        compClasses: function() {
+            return {
+                available: this.available,
+                nearby: this.nearby
+            }
         }
     }
 });
