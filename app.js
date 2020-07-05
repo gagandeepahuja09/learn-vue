@@ -1,26 +1,21 @@
-var one = new Vue({
-    el: '#vue-app-one',
-    data: {
-        title: 'Title One'
-    },
-    methods: {
-    },
-    computed: {
-    }
-});
-
-var two = new Vue({
-    el: '#vue-app-two',
-    data: {
-        title: 'Title Two'
-    },
-    methods: {
-        changeATitle: function() {
-            one.title = "Title of A Changed";
+Vue.component('greeting', {
+    template: '<p>Hey there, I am {{ name }}. This <button @click="changeName">button</button> will change my name</p>',
+    data: function() {
+        return {
+            name: 'Gagandeep',
         }
     },
-    computed: {
-    }
+    methods: {
+        changeName: function() {
+            this.name = 'Gary';
+        }
+    },
 });
 
-two.title = "Changed outside the vue instance";
+new Vue({
+    el: '#vue-app-one'
+});
+
+new Vue({
+    el: '#vue-app-two'
+});
