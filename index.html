@@ -7,12 +7,12 @@
         <script src="https://unpkg.com/vue"></script>
     </head>
     <body>
-        <h1>Components</h1>
-        <div id="vue-app-one">
-            <greeting></greeting>
-        </div>
-        <div id="vue-app-two">
-            <greeting></greeting>
+        <div id="vue-app">
+        <h1>Referencing using $refs</h1>
+        <h2>{{ text }}</h2>
+        <input type="text" ref="input" />
+        <button @click="readRefs">Change Text</button>
+        <div ref="test">This is the test text</div>
         </div>
     </body>
 
