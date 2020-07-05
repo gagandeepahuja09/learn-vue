@@ -1,6 +1,13 @@
-#canvas {
-    width: 600px;
-    padding: 200px 20px;
-    text-align: center;
-    border: 1px solid #333;
+#ball {
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+button {
+    height: 50px;
+    margin: 0 auto;
 }

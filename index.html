@@ -8,37 +8,12 @@
     </head>
     <body>
         <div id="vue-app">
-            <h1>{{ greet('Evening') }}</h1>
-            <p>Name: {{ name }}</p>
-            <p>About: {{ about }}</p>
-            <button v-on:click="age++">Add One To Age</button>
-            <button v-on:click="add(1)">Add One To Age(Method)</button>
-            <button v-on:dblclick="add(10)">Add Ten To Age(Double Click)</button>
-            <p>Age: {{ age }}</p>
-            <button v-on:click.once="age--">Subtract One From Age</button>
-            <button v-on:click="subtract">Subtract One From Age(Method)</button>
-            <a v-on:click.prevent="linkClick" v-bind:href="website">Github Profile</a>
-            <input type="text" v-bind:value="name">
-            <a :href="website">Github Profile(Shorthand Representation for Data Binding in Vue)</a>
-            <h1>Keyboard Events</h1>
-            <input type="text" @keyup.enter="logName" v-model="name">
-                <label>Name:</label>
-            </input>
-            <input type="text" @keyup.alt.enter="logAge" v-model="age">
-                <label>Age:</label>
-            </input>
-            <p v-html="websiteTag"></p>
-            <div id="canvas" v-on:mousemove="updateXY">{{ x }}, {{ y }}</div>
-            <h2>Computed Properties</h2>
-            <h3>{{ a }}</h3>
-            <h3>{{ b }}</h3>
-            <button @click="a++">Add One To a</button>
-            <button @click="b++">Add One To b</button>
-            <!-- Without computed properties
-            <p>A + Age: {{ ageA() }}</p>
-            <p>B + Age: {{ ageB() }}</p> -->
-            <p>A + Age: {{ ageA }}</p>
-            <p>B + Age: {{ ageB }}</p>
+            <div id="ball" class="center" :style="{ 'height': height + 'px', 'width': height + 'px' }" @click="kick">
+            </div>
+            <div class="center">
+                <button @click="restart" v-if="ended">Restart</button>
+                <button @click="kick">Kick</button>
+            </div>
         </div>
     </body>
 
